@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "flet-iconoir"
-version = "0.2.0"
+version = "0.2.2"
 description = "the Iconoir library, wrapped for Flet."
 authors = ["hex benjamin <hex@hexbenjam.in>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 flet = "^0.22.0"
 
 

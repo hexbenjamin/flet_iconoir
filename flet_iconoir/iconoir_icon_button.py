@@ -10,9 +10,9 @@ class IconoirIconButton(ft.Container):
         on_click: callable = None,
         icon_set: str = "regular",
         icon_size: int = 16,
-        icon_color: str = ft.colors.PRIMARY,
-        hover_color: str = ft.colors.ON_PRIMARY,
-        bg_color: str = ft.colors.PRIMARY_CONTAINER,
+        icon_color: str = ft.colors.ON_PRIMARY,
+        hover_color: str = ft.colors.PRIMARY_CONTAINER,
+        bg_color: str = ft.colors.ON_PRIMARY_CONTAINER,
         padding: int = 8,
         circular: bool = True,
         border_radius: int = 8,
@@ -35,9 +35,8 @@ class IconoirIconButton(ft.Container):
         self.circular = circular
         self.border_radius = border_radius
 
-        # self.clip_behavior = ft.ClipBehavior.ANTI_ALIAS
-
         self.content = IconoirIcon(self.icon_name, self.icon_set, self.icon_color)
+
         self.shape = ft.BoxShape.CIRCLE if self.circular else ft.BoxShape.RECTANGLE
         self.on_hover = self.highlight
 
