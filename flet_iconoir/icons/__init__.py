@@ -8,7 +8,7 @@ library = {"regular": regular, "solid": solid}
 
 
 def get_icon_path(icon_set: Literal["regular"] | Literal["solid"], name: str) -> str:
-    return pkg_resources.files(library[icon_set]) / (name + ".svg")
+    return pkg_resources.files(library[icon_set]) / f"{name}.svg"
 
 
 __all__ = ["IconLibrary"]
