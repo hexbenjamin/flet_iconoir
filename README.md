@@ -4,7 +4,7 @@
 
 ## usage
 
-adds a new `IconoirIcon` class. use it like this with a name from the [Iconoir](https://iconoir.com/) list!
+adds a new `IconoirIcon` function. use it like this with a name from the [Iconoir](https://iconoir.com/) list!
 
 ```python
 page.add(
@@ -13,7 +13,7 @@ page.add(
         icon_set="regular",  # or "solid" !
         icon_size=32,  # default
         icon_color=ft.colors.PRIMARY,  # default
-        **kwargs,  # passed to the flet.Container this thing subclasses!
+        **kwargs,  # passed to the flet.Image this thing returns!
     )
 )
 ```

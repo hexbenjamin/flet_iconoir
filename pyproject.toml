@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "flet-iconoir"
-version = "0.1.2"
+version = "0.2.0"
 description = "the Iconoir library, wrapped for Flet."
 authors = ["hex benjamin <hex@hexbenjam.in>"]
 license = "MIT"
